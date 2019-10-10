@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARKitAVAudioSessionBugReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ohr-gZ-0F9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="arSessionAutoAVAudioSession" id="XvB-rW-ogJ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="63.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XvB-rW-ogJ" id="8U0-fi-Seq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARSession + automatic AVAudioSession management" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ko0-Vv-uav">
+                                                    <rect key="frame" x="35" y="11" width="344" height="41.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ko0-Vv-uav" firstAttribute="leading" secondItem="8U0-fi-Seq" secondAttribute="leadingMargin" constant="15" id="FeC-AO-HYE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ko0-Vv-uav" secondAttribute="bottom" id="Gs6-rH-YFd"/>
+                                                <constraint firstItem="ko0-Vv-uav" firstAttribute="top" secondItem="8U0-fi-Seq" secondAttribute="topMargin" id="Ovq-00-Cxj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ko0-Vv-uav" secondAttribute="trailing" constant="15" id="eh8-GA-vaL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="arSessionManualAVAudioSession" id="zqC-g0-OOo">
+                                        <rect key="frame" x="0.0" y="91.5" width="414" height="63.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zqC-g0-OOo" id="OFa-zP-p4L">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARSession + manual AVAudioSession management" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f8P-Yb-Fj0">
+                                                    <rect key="frame" x="35" y="11" width="344" height="41.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f8P-Yb-Fj0" secondAttribute="bottom" id="OI3-za-95C"/>
+                                                <constraint firstItem="f8P-Yb-Fj0" firstAttribute="leading" secondItem="OFa-zP-p4L" secondAttribute="leadingMargin" constant="15" id="Vke-kJ-Q0Y"/>
+                                                <constraint firstItem="f8P-Yb-Fj0" firstAttribute="top" secondItem="OFa-zP-p4L" secondAttribute="topMargin" id="e61-w2-sx9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="f8P-Yb-Fj0" secondAttribute="trailing" constant="15" id="reW-Xi-Nz7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="arSessionManualAVAudioSessionWithoutAVAudioSessionDeactivation" id="Wa7-V0-O0w">
+                                        <rect key="frame" x="0.0" y="155" width="414" height="83.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wa7-V0-O0w" id="YI2-q5-xFY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="83.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARSession + manual AVAudioSession management without deactivating the AVAudioSession" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6yW-Zb-Bu4">
+                                                    <rect key="frame" x="35" y="11" width="344" height="61.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6yW-Zb-Bu4" secondAttribute="bottom" id="C8e-w2-D9M"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6yW-Zb-Bu4" secondAttribute="trailing" constant="15" id="Twy-Nv-P2M"/>
+                                                <constraint firstItem="6yW-Zb-Bu4" firstAttribute="top" secondItem="YI2-q5-xFY" secondAttribute="topMargin" id="Y8e-OM-lHN"/>
+                                                <constraint firstItem="6yW-Zb-Bu4" firstAttribute="leading" secondItem="YI2-q5-xFY" secondAttribute="leadingMargin" constant="15" id="o48-gi-eg7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="e7H-3K-vow"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QRg-5O-ui4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ohr-gZ-0F9" secondAttribute="trailing" id="ceo-Jw-5PX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ohr-gZ-0F9" secondAttribute="bottom" id="hwf-do-ZE0"/>
+                            <constraint firstItem="Ohr-gZ-0F9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pOQ-NZ-XhY"/>
+                            <constraint firstItem="Ohr-gZ-0F9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tWd-yy-mbH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+        <!--Kit View Controller-->
+        <scene sceneID="0O5-rE-IrW">
+            <objects>
+                <viewController storyboardIdentifier="arKitViewController" id="x8x-Nz-eRz" customClass="ARKitViewController" customModule="ARKitAVAudioSessionBugReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Smu-ef-OhP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLM-9A-CIM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wah-km-Zpb">
+                                <rect key="frame" x="40" y="84" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="JcR-4q-iZd"/>
+                                    <constraint firstAttribute="height" constant="55" id="VIo-7K-PtB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="x8x-Nz-eRz" eventType="touchUpInside" id="ezb-qA-XFk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jLM-9A-CIM" firstAttribute="top" secondItem="mMB-FH-adW" secondAttribute="top" id="67S-aO-1Vy"/>
+                            <constraint firstItem="wah-km-Zpb" firstAttribute="leading" secondItem="mMB-FH-adW" secondAttribute="leading" constant="40" id="AXh-g5-w5y"/>
+                            <constraint firstItem="jLM-9A-CIM" firstAttribute="leading" secondItem="mMB-FH-adW" secondAttribute="leading" id="Gmv-L4-WM4"/>
+                            <constraint firstItem="mMB-FH-adW" firstAttribute="bottom" secondItem="jLM-9A-CIM" secondAttribute="bottom" id="fhW-Up-FWq"/>
+                            <constraint firstItem="mMB-FH-adW" firstAttribute="trailing" secondItem="jLM-9A-CIM" secondAttribute="trailing" id="fvV-kl-LwA"/>
+                            <constraint firstItem="wah-km-Zpb" firstAttribute="top" secondItem="mMB-FH-adW" secondAttribute="top" constant="40" id="oCz-jb-bsV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mMB-FH-adW"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="jLM-9A-CIM" id="iFa-pO-3Sd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVQ-7L-8ik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="139"/>
+        </scene>
+    </scenes>
+</document>
